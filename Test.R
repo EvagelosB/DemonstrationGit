@@ -9,3 +9,10 @@ x
 
 y<-2
 y
+
+#now it is time to connect everything to github:
+usethis::use_github()
+
+gitcreds::gitcreds_set() #adds our token to the system to login kinda
+usethis::use_github() 
+
