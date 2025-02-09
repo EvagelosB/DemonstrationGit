@@ -16,3 +16,9 @@ usethis::use_github()
 gitcreds::gitcreds_set() #adds our token to the system to login kinda
 usethis::use_github() 
 
+username <- "EvagelosB"  # replace NULL with e.g. "Miguel Rodo" (be sure to include the quotes)
+email <- "evagelosbatsis03@gmail.com" # replace NULL with e.g. "miguel.rodo@uct.ac.za"
+stopifnot(!is.null(username)) # just checking you set this
+stopifnot(!is.null(email))
+gert::git_config_global_set("user.name",  username)
+gert::git_config_global_set("user.email", email)
